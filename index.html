@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Sterling Silver Ring | VIVI</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">VIVI</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Store</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link disabled"
+                      href="#"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      >About us</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-success btn-disabled"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="bigspace" class="col-12"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 behind">
+          <div class="container-fluid">
+            <div class="row">
+              <div id="ringimg" class="col-6"></div>
+              <div class="col-2" id="gem">
+                <img class="gem" src="img/gem/wh.jpg" alt="white sapphire" />
+                <br />
+                <img class="gem" src="img/gem/ru.jpg" alt="ruby" />
+                <br />
+                <img class="gem" src="img/gem/ci.jpg" alt="citrine" />
+                <br />
+                <img class="gem" src="img/gem/am.jpg" alt="amethyst" />
+                <br />
+                <img class="gem" src="img/gem/op.jpg" alt="opal" />
+              </div>
+              <div class="col-4">
+                <h1>Sterling Silver Ring</h1>
+                <br />
+                <br />
+                <br />
+                <br />
+                <select name="rings" id="rings">
+                  <option selected disabled value="empty-state"></option>
+                  <option value="wh">White Sapphire</option>
+                  <option value="ru">Ruby</option>
+                  <option value="ci">Citrine</option>
+                  <option value="am">Amethyst</option>
+                  <option value="op">Opal</option>
+                </select>
+                <br />
+
+                <br />
+                <br />
+                <p>
+                  A beautiful silver ring with the stone of your choice.
+                  Surrounded by two smaller white sapphires on each side.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var rings = document.getElementById("rings");
+      console.log("rings");
+      rings.onchange = function () {
+        document.getElementById("ringimg").style.backgroundImage =
+          "url(img/" + rings.value + "@2x.jpg)";
+      };
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

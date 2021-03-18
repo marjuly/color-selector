@@ -1,0 +1,24 @@
+#bigspace {
+  height: 90px;
+}
+
+#ringimg {
+  height: 450px;
+  width: 450px;
+  background-image: url("../img/empty-state@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 58px;
+}
+
+.ring {
+  height: 450px;
+}
+.gem {
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  cursor: not-allowed;
+}
